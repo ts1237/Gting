@@ -1,0 +1,300 @@
+@charset "utf-8";
+@media(min-width: 1024px) and (max-width: 1200px){
+    .about .ab-left{
+        max-width: 50%;
+        padding:0 10px;
+    }
+    .about .ab-right{
+        max-width: 50%;
+        padding: 5em 3em;
+    }
+    .about p{
+        line-height: 1.5;
+    }
+    .cn-left p,
+    .cn-left p a{
+        margin-bottom: 20px;
+        line-height:1.5;
+    }
+}
+@media(max-width: 1024px) {
+    .logo a{
+        font-size: 30px;
+
+    }
+    .logo a span:last-child{
+        padding-left:10px
+    }
+    .nav-pc{
+        position: absolute;
+        top:63px;
+        left: 0;
+        width: 100%;
+        padding:0;
+
+    }
+    .menu{
+        background:rgba(0,0,0,.3);
+        display: none;
+    }
+    .menu > li{
+        float:none;
+    }
+    .menu > li i.rotate{
+        transform:rotate(-90deg);
+        right: 20px;
+        padding:3px 5px;
+        cursor:pointer;
+
+        transition:0s all ease;
+        transform-origin:center center;
+    }
+    .menu > li:hover i{
+        transform:rotate(-90deg);
+    }
+    .menu > li i.active{
+        right: 20px;
+        padding:3px 5px;
+        cursor:pointer;
+        transform:rotate(360deg);
+        transition:0s all ease;
+        transform-origin:center center;
+
+    }
+
+    .menu > li:hover .sub-menu{
+        top:0;
+    }
+    .sub-menu{
+        position: relative;
+        top:0px;
+        opacity: 1;
+        visibility: visible;
+        text-align: left;
+        display: none;
+        background:rgba(0,0,0,.3);
+    }
+    .sub-menu li{
+        text-align: left;
+        padding: 5px 20px;
+    }
+    .sub-menu li a{
+        display:inline;
+        font-size: 16px;
+
+    }
+    .sub-menu li a:hover{
+        background: none;
+    }
+    .menu li:hover .sub-menu{
+        opacity: 1;
+    }
+    .search,
+    .phone-btn{
+        opacity: 1;
+        visibility: visible;
+
+    }
+    .banner,
+    .banner .mask{
+        min-height: 550px;
+    }
+    .about .ab-left,
+    .about .ab-right,
+    .events .ev-left,
+    .events .ev-right,
+    .services .sv-left,
+    .services .sv-right{
+        float:none;
+        max-width: 100%;
+        padding:0;
+
+
+    }
+    .about .ab-right{
+        border-radius: 0;
+    }
+    .about p{
+        line-height: 1.4;
+    }
+
+    .ev-left ul li:nth-child(n){
+        margin-top:10px;
+        font-size:20px;
+    }
+    .ev-left ul li:nth-child(2n){
+        font-size:16px;
+        line-height: 1.5;
+    }
+    h3.heading{
+        font-size:30px;
+    }
+    h4.heading{
+        font-size:28px;
+    }
+    .ev-right h4{
+        font-size:20px;
+        line-height: 1.5;
+    }
+
+    .box .b-text,
+    .box .icon{
+        padding-left:5px;
+    }
+    .box .icon > a{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+    .cn-left p,
+    .cn-left p a{
+        margin-bottom: 16px;
+        line-height:1.5;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .services .sv-right li{
+        width: 50%;
+    }
+    .banner,
+    .banner .mask{
+        min-height: 300px;
+    }
+    .text-center{
+        padding-top: 5em;
+    }
+    .text-center h3{
+        font-size:60px;
+    }
+    .text-center h2{
+        font-size:60px;
+    }
+    .text-center a {
+        margin-top:0;
+        padding: 5px 10px;
+    }
+    .bar-btn{
+        margin-top:0.5em;
+    }
+    .position ul li{
+    width: 50%;
+    }
+    .register a {
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+    .register h3 {
+        font-size: 20px;
+        line-height:2;
+    }
+    .cn-left p,
+    .cn-left p a{
+        margin-bottom:5px;
+        line-height:1.5;
+    }
+    .contact .cn-left,
+    .contact .cn-right{
+        float:none;
+        width: 100%;
+
+    }
+    .bottomBar{
+        display: block;
+    }
+}
+@media(max-width: 414px){
+    header .logo{
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+    .logo a{
+        font-size: 30px;
+        font-weight: 400;
+        color: #fafafa;
+        padding-left:30px;
+        display: block;
+    }
+    .logo a span.fa {
+        color: #5341b4;
+        font-size:30px;
+        position: absolute;
+        top:15px;
+        left:0;
+    }
+    .logo a span:last-child{
+        font-size:14px;
+        color:#ccc;
+        display:block;
+        padding-left:10px;
+    }
+    .search{
+        top:-10px;
+        right: 60px;
+    }
+    .search .search-box{
+        width:80px;
+    }
+    .search .search-box:focus{
+        width: 100px;
+    }
+    .phone-btn{
+        top:5px;
+        right: 5px;
+        text-align: center;
+    }
+
+    .banner,
+    .banner .mask{
+        min-height: 300px;
+    }
+    .text-center{
+        padding-top: 5em;
+    }
+    .text-center h3{
+        font-size:60px;
+    }
+    .text-center h2{
+        font-size:40px;
+    }
+    .text-center a {
+        margin-top:0;
+        padding: 5px 10px;
+    }
+    .bar-btn{
+        margin-top:0.5em;
+    }
+    .register .info{
+        padding-left:5em;
+    }
+    .position ul li{
+
+        width: 100%;
+    }
+
+
+}
+@media(max-width: 375px){
+    .logo a{
+        font-size: 26px;
+
+    }
+    .logo a span:last-child{
+        padding-left:5px;
+    }
+    .search .search-box:focus{
+        width: 90px;
+    }
+    .services .sv-right li{
+        width: 100%;
+    }
+    .register .info{
+        padding-left:2em;
+    }
+    .register h3 {
+        line-height:1.5;
+    }
+}
